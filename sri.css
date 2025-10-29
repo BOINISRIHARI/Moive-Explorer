@@ -1,0 +1,124 @@
+/* === Neon Netflix Style === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #57c2e6 0%, #bdbaba 80%);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #e31111;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  width: 250px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00eaff;
+  background: #111;
+  color: #fff;
+}
+
+input:focus {
+  box-shadow: 0 0 20px #00fff0;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #e0588a, #d63d91);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #ff0055;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ff5500, 0 0 35px #ff0055;
+}
+
+#errorMessage {
+  color: #ff3333;
+  margin-top: 15px;
+  font-weight: bold;
+  text-shadow: 0 0 10px red;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+.movie-card {
+  width: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #111;
+  box-shadow: 0 0 15px #00eaff50;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #00fff0, 0 0 40px #ff0055;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.movie-card:hover img {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.movie-info {
+  padding: 10px;
+}
+
+.movie-info h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: #00fff0;
+  text-shadow: 0 0 10px #00fff0;
+}
+
+.movie-info p {
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #00fff0, #ff0055);
+  border-radius: 10px;
+}
